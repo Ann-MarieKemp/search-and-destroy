@@ -2,7 +2,18 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+    const newObj = {}
 
+    let currentNode = linkedlist.head
+    while (currentNode.next) {
+        if (!newObj[currentNode.value]) {
+            newObj[currentNode.value] = currentNode.value
+            currentNode = currentNode.next
+        } else {
+            return true
+        }
+    }
+    return false
 };
 
 
