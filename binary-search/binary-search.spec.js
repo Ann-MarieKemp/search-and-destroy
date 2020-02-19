@@ -20,6 +20,10 @@ describe('Binary Search', () => {
 		expect(binarySearch(test3, 4)).to.equal(false);
 	});
 
+	it('returns true if 5 is in array [2,5,9,11,15]', () => {
+		expect(binarySearch([2,5,9,11,15], 5)).to.equal(true);
+	})
+
 	//(OPTIONAL) WRITE YOUR OWN TESTS HERE. Include >=1 edge case :)
 
 });
